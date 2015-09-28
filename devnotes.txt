@@ -1,0 +1,24 @@
+Proposed SD commands to support:
+
+G28 - Home
+M0 - Stop
+M20 - List SD card
+M21 - Init SD card
+M22 - Release SD card
+M23 - Select SD file
+M24 - Start SD print
+M32 - Select and start print
+M25 - Pause SD print
+M27 - Report SD print status
+M104 - Set extruder temp
+M105- Get extruder temp
+M106 - Fan on
+M107 - Fan off
+M115 - Get firmware version
+
+
+Optional (for uploading gcode files remotely):
+
+M28 - Begin SD write
+M29 - Stop writing to SD
+M30 - Delete SD file

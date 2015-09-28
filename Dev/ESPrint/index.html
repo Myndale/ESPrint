@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Multi-page template</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+</head>
+
+<body>
+
+    <div data-role="page">
+            
+            <div data-role="header" data-position="fixed">
+                <h1>ESPrint</h1>
+            </div>
+
+            <div data-role="tabs">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#bot" class="ui-btn-active" data-theme="a" data-ajax="false">Bot</a></li>
+                        <li><a href="#extruder" data-theme="a" data-ajax="false">Extruder</a></li>
+                        <li><a href="#files" data-theme="a" data-ajax="ignore">Files</a></li>
+                    </ul>
+                </div>
+
+                <div id="bot" class="ui-content">
+                    <div class="ui-grid-b">
+                        <div class="ui-block-a"><a href="#" class="ui-shadow ui-btn ui-corner-all">X:</a></div>
+                        <div class="ui-block-b"><a href="#" class="ui-shadow ui-btn ui-corner-all">Left</a></div>
+                        <div class="ui-block-c"><a href="#" class="ui-shadow ui-btn ui-corner-all">Right</a></div>
+                    </div>
+                    <div class="ui-grid-b">
+                        <div class="ui-block-a"><a href="#" class="ui-shadow ui-btn ui-corner-all">Y:</a></div>
+                        <div class="ui-block-b"><a href="#" class="ui-shadow ui-btn ui-corner-all">Forward</a></div>
+                        <div class="ui-block-c"><a href="#" class="ui-shadow ui-btn ui-corner-all">Back</a></div>
+                    </div>
+                    <div class="ui-grid-b">
+                        <div class="ui-block-a"><a href="#" class="ui-shadow ui-btn ui-corner-all">Z:</a></div>
+                        <div class="ui-block-b"><a href="#" class="ui-shadow ui-btn ui-corner-all">Up</a></div>
+                        <div class="ui-block-c"><a href="#" class="ui-shadow ui-btn ui-corner-all">Down</a></div>
+                    </div>
+                </div>
+
+                <div id="extruder" class="ui-content">
+                    <h1>Extruder</h1>
+                </div>
+
+                <div id="files" class="ui-content">
+                    <h1>Files</h1>
+					<ul data-role="listview">
+						<li><a href="#">folder 1</a></li>
+						<li><a href="#">folder 2</a></li>
+						<li><a href="#">file1</a></li>
+						<li><a href="#">file2</a></li>
+						<li><a href="#">file3</a></li>
+						<li><a href="#">file4</a></li>
+						<li><a href="#">file5</a></li>
+						<li><a href="#">file6</a></li>
+						<li><a href="#">file7</a></li>
+					</ul>
+                </div>
+                
+
+            </div>
+
+        <div data-role="footer" data-position="fixed">
+            <button class="ui-btn ui-corner-all ui-shadow">Stop All</button>
+        </div>
+
+    </div><!-- /page -->
+
+</body>
+</html>
